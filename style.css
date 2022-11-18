@@ -1,0 +1,128 @@
+bodi {
+    margin: 0; /* поле */
+    padding: 0; /* набивка */
+}
+
+header {
+    display: flex; /* отображать */
+    align-items: center; /* выравнивание элементов */
+    justify-content: center; /* выравнивание содержания */
+    height: 400px; /* высота */
+    background: url('Природа.jpg') bottom no-repeat /* нижняя не повторяющаяся */;
+    background-size: cover; /* размер фона: обложка */
+}
+
+h1 {
+    color: #fffffd; /* Цвет заголовка */
+    font-size: 4rem; /* размер шрифта */
+    font-family: 'Times New Roman', Times, serif; /* семейство шрифтов: 'Times New Roman', Times, с засечками */
+}
+
+.news {
+    background-color: #fff;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 768px; /* ширина: 768 пикселей; (Высота каждого блока новостей) */
+    margin: 0 auto 32px; /* поле: 0 авто 32px (Ширина каждого блока новостей) */
+    padding: 60px 15px; /* отступ: 60px 15px; (Отступы от содержимого блока) */
+    border-bottom: none;
+} 
+
+article a {
+    color: rgb(33,37,41);
+    text-decoration: none; /* текстовое оформление: нет; */
+}
+
+article a:hover { /* статья а:наведите (При наводе курсивом меняет цвет) */
+    color: #0085a1;
+}
+
+article h2 {
+    font-family /* семейство шрифтов */: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px; /* нижняя (поле)граница */
+}
+
+.article-meta {
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px; /* высота: 300 пикселей; */
+    object-fit: cover; /* объект подходит: обложка; */
+}
+
+footer {
+    padding-top: 20px; /* обивка-сверху */
+    padding-bottom: 60px; /* обивка-дно */
+    text-align: center; /* выравнивание текста */
+}
+
+footer .links { /* нижний колонтитул .ссылки */
+    margin-bottom: 50px; /* нижняя поле */
+}
+
+footer .links > a {
+    color: #636b6f;
+    padding: 0 25px; /* расстояние между ссылками */
+    font-size: 13px; /* размер шрифта ссылок*/
+    font-weight: 600; /* вес шрифта: 600; */
+    letter-spacing: .lrem; /* межбуквенный интервал: .lrem; */
+    text-decoration: none; /* текстовое оформление: нет (убр. подчёркивание); */
+    text-transform: uppercase; /* преобразование текста: (все буквы большие); */
+}
+
+.copyringht { /* Авторские права */
+    color: rgb (108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Добавленные коды для стилизации*/
+
+
+article:nth-child(2n+2) { /* статья: n-й ребенок */
+    background: rgb(241, 238, 238);
+}
+
+.anti-icing-text {
+    color: rgb(245, 8, 87);
+}
+
+.chapter-text {
+    font-style: italic;
+    color: rgb(217, 101, 6);
+}
+
+.Maxim_Sokolov-text  {
+    font-weight: bold;
+    color: rgb(245, 8, 87);
+}
+
+.Saba_Sazonov-text {
+    font-weight: bold;
+    color: rgb(245, 8, 87);
+}
+
+.deputy_governor-text {
+    font-style: italic;
+    color: rgb(217, 101, 6);
+}
+
+.Vladimir_Popov-text {
+    font-weight: bold;
+    color: rgb(245, 8, 87);
+}
+
+.Winter_Palace-text {
+    color: rgb(245, 8, 87);
+}
+
+q::before { /* До (Добавление текста) */
+    content: "NEW";
+    color: blue;
+  }
+  
